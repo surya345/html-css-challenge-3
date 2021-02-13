@@ -6,24 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-         /* #food1,#food2,#food3{
-            width: 300px;
-            height: 200px;
-            margin-top: 2%;
-            margin-left: 2%;
-            /* box-shadow: 5px 10px 18px #888888; */
-            /* border:5px solid grey;
-            display:inline-block;
-        }  */
-        /* #food4,#food5,#food6{
-            position: relative;
-            margin-top: 2%;
-            margin-left: 2%;
-            width: 400px;
-            height: 250px;
-            align-items: center;
-            justify-content: center; */
-        /* } */ */
         div h1{
             font-family: "Times New Roman", Times, serif;
             color:rgb(184, 24, 24);
@@ -31,18 +13,41 @@
         div p{
             justify-content: center;
         }
-        /* .bannerimg1>a,.bannerimg2>a{
+       
+        .container3{
+            width: 1200px;
+            height: 140px;
+            border: 1px solid red;
+        }
+        .box1{
+            width: 100px;
+            height: 20px;
+            margin-top: 2%;
+            margin-right: 4%;
             
-        } */
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            justify-content: flex-end;
+            float: right;
+        }
+        .box1 a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
     </style>
 </head>
 <body>
     <div class="container">
         <div class="container1">
             <img id="bannerimg" src="./images/food.png" alt="food-logo">
-           <!-- <div class="bannerimg1"><a  href="#">Login</a>|</div> 
-            <div class="bannerimg2><a  "href="#">Find Us</a>|</div>  -->
-        </div>
+            <div class="box1">
+             <a  href="#Login">Login</a>|
+             <a  href="#Find Us">Find Us</a>
+            </div> 
+            </div>
        
        <div class="container2">
          <div class="img1"> <a href="#Home">Home</a></div>
@@ -52,20 +57,50 @@
          <div class="img5"> <a href="#Contact us">Contact us</a></div>
          <div class="img6"> <a href="#About us">About us</a></div>
        </div>
-    </div>
+    
 
     <div class="foodcontainer">
-        <h1 >Our Specialities</h1>
+        <h1 font-family: 'Roboto Slab', serif; >Our Specialities</h1>
         <div class="foodcontainer1">
-              <div class="food1"><img src="./images/fastfood_small.jpg" alt="" title="Burger"></div>
-              <div class="food2"><img  src="./images/pizza_small.jpg" alt="" title="Pizza"></div>
-              <div class="food3"><img  src="./images/pasta.jpg" alt="" title="Pasta"></div>
-              <div class="food4"> <img  src="./images/cake_small.jpg" alt="" title="Cake"></div>
-              <div class="food5"><img  src="./images/dessert_small.jpg" alt="" title="Dessert"></div>
-              <div class="food6"><img  src="./images/salad.jpg" alt="" title="Salad"></div> 
+              <img id="food1"src="./images/fastfood_small.jpg" alt="Burger" title="Burger" >
+              
+              <img id="food1" src="./images/pizza_small.jpg" alt="Pizza" title="Pizza">
+              <img id="food1" src="./images/pasta.jpg" alt="Pasta" title="Pasta">
+               <img id="food1" src="./images/cake_small.jpg" alt="Cake" title="Cake">
+              <img id="food1" src="./images/dessert_small.jpg" alt="Dessert" title="Dessert">
+              <img id="food1" src="./images/salad.jpg" alt="Salad" title="Salad"> 
         </div>
+       <div class="box2">
+         <h1>Quick Menu</h1>
+         <div id="menu1">
+             <li>Burgers</li>
+         </div>
+         <div id="menu1">
+             <li>Chicken Specialities</li>
+         </div>
+         <div id="menu1">
+             <li>Desserts</li>
+         </div>
+         <div id="menu1">
+             <li>Drinks</li>
+         </div>
+         <div id="menu1">
+             <li>Kababs</li>
+         </div>
+         <div id="menu1">
+             <li>Rice/Biryani</li>
+         </div>
+         <div id="menu1">
+             <li>Pastas</li>
+         </div>
+         <div id="menu1">
+             <li>Soups & Salads</li>
+         </div>
+       </div>
     </div>
-        <h1>Introduction</h1>
+        <div class="container3">
+       
+        <h1 font-family: 'Roboto Slab', serif;>Introduction</h1>
         <p > Chicago Food Planet is an American chain of restaurants that enables food lovers to come together and enjoy food. 
             It provides online delivery 
             of food items, 24*7.  
@@ -78,6 +113,7 @@
     <footer>
         <p>Copyright &copy; Chicago Food Planet com</p>
     </footer>
-
+</div>
+</div>
 </body>
 </html>

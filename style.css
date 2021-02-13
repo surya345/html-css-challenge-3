@@ -1,5 +1,6 @@
 *{
-    
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -29,11 +30,13 @@
    color: green;
 }
 footer{
-    width: 1150px;
+    width: 1200px;
     height: 30px;
     background-color:rgb(197, 18, 18);
     color: white;
+    text-align: center;
     
+    padding: 1%;
 }
 .img1,.img2,.img3,.img4,.img5,.img6
         {
@@ -72,41 +75,46 @@ footer{
             color: rgb(26, 202, 26);
         }
         .foodcontainer{
-         
+            display: grid; 
+            
+         width: 1200px;
+         height: 300px;
+         border: 1px solid red;
         }
         .foodcontainer1{
-            display: flex;
-            flex-direction: row;
-            
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr ; 
+            grid-gap: 1px;
+            margin: 1%;
+           padding: 10px;
+           width: 700px;
+           height: 200px;
+           /* border: 1px solid red; */
         }
-        .foodcontainer1>div{ 
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          width: 300px;
-          margin: 10px;
-          
-        }
-        .food1{
-        
-        }
-        .food2{
+        .foodcontainer1 #food1{
            
-          
+            grid-column-gap: 2px;
+           padding: 10px;
+           width: 200px;
+            height: 110px;
         }
-        .food3{
-            
-           
-        }
-        .food4{
-            
-            
+        #food1{
             
         }
-        .food5{
-            
+         .box2{
+           display: flex;
+           flex-direction: column;
+           align-items: flex-end;
+            justify-content: center;
+            width: 400px;
+            height: 100px;
+            border: 1px solid red; 
+           margin-left: 60%;
            
         }
-        .food6{
-           
-        }
+        #menu1{
+            width: 100px;
+            height: 3px;
+            border: 1px solid red;
+        } 
+       
